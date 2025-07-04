@@ -7,11 +7,11 @@ flowchart LR
     
     subgraph Internet["Internet"]
 	    subgraph WIFI["WIFI"]
-        Router["Router"]
+        Router["Router (NB6VAC-FXC-r1)"]
         Wi-Fi["Wi-Fi"]
 	    end
         ISP["ISP (SFR)"]
-        Switch["Switch"]
+        Switch["Switch (TP-Link TL-SG105)"]
     end
     subgraph Server["Services"]
         Vault["VaultWarden (Password Manager)"]
@@ -29,9 +29,8 @@ flowchart LR
         Mother["Mother"]
         Father["Father"]
     end
-
-		ISP -- Fiber --> Router
-    MiniPC["MiniPC/Server"] --- Vault
+    ISP -- Fiber --> Router
+    MiniPC["MiniPC/Server (HP ProDesk 400 G1 DM)"] --- Vault
     MiniPC --- Jukebox
     MiniPC --- Mailbox
     MiniPC --- NAS
