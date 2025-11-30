@@ -1,3 +1,6 @@
 [submodule "Immich"]
 	path = Immich
 	url = https://github.com/Ciugiu/Immich.git
+[submodule "Game Servers/Valheim"]
+	path = Game Servers/Valheim
+	url = github:Ciugiu/Valheim
